@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     // Fetch books from the backend
-    axios.get('http://localhost:5000')
+    axios.get('https://books-vite-api.vercel.app')
       .then(response => {
         setBooks(response.data);
       })
